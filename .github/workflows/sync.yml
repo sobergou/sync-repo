@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: clone repo
         run: |
-          git clone https://github.com/aosp-mirror/tools_repo.git repo
+          git clone https://github.com/GerritCodeReview/git-repo repo
           cd repo
           git fetch --all
           git remote add gitee https://oauth2:${{ secrets.GITEE_TOKEN }}@gitee.com/sobergou/repo.git
