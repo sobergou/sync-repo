@@ -11,13 +11,13 @@ jobs:
     steps:
       - name: clone repo
         run: |
-          git clone https://github.com/GerritCodeReview/git-repo repo
-          cd repo
+          git clone https://github.com/GerritCodeReview/git-repo
+          cd git-repo
           git fetch --all
           git remote add gitee https://oauth2:${{ secrets.GITEE_TOKEN }}@gitee.com/sobergou/git-repo.git
         
       - name: push gitee
         run: |
-          cd repo
+          cd git-repo
           git push --force --all gitee
           git push --force --tags gitee
