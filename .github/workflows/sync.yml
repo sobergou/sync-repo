@@ -1,4 +1,4 @@
-name: sync repo auto
+name: sync git-repo auto
 on:
   schedule:
     - cron: '0 18 * * *'  # 每天 UTC 18:00 = 北京时间 2:00
