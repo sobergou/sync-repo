@@ -1,7 +1,7 @@
 name: sync git-repo auto
 on:
   schedule:
-    - cron: '0 18 * * *'  # 每天 UTC 18:00 = 北京时间 2:00
+    - cron: '0 18 14 * *'  # 每月 北京时间 15日 02:00（UTC 14日 18:00）
   workflow_dispatch:
 
 jobs:
