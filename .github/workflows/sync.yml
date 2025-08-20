@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: clone repo
+      - name: clone git-repo
         run: |
           git clone https://github.com/GerritCodeReview/git-repo
           cd git-repo
